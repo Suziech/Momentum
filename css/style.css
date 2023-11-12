@@ -4,9 +4,14 @@ body {
     justify-content: space-between;
     box-sizing: border-box;
     margin: 0;
-    padding: 10px;
-    max-height: 100vh;
-    width: 100vw;
+    padding: 0;
+}
+
+.bg-image {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
 }
 
 #top {
@@ -93,4 +98,5 @@ body {
 #bottom {
     color: white;
     margin: 0 auto;
+    padding-top: 70px;
 }
