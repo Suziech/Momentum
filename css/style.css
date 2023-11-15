@@ -48,7 +48,7 @@ body {
 #clock {
     color: white;
     font-size: 150px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 .hidden {
@@ -57,11 +57,16 @@ body {
 
 #login-form > button {
     background: transparent;
-    border: 2px dashed white;
+    border: 2px solid white;
     color: white;
     height: 40px;
     font-size: 20px;
     cursor: pointer;
+}
+
+#login-form > button:hover {
+    background-color: white;
+    color: black;
 }
 
 .name {
@@ -87,18 +92,21 @@ body {
     margin: 0;
 }
 
+.todoListHeader {
+    color: white;
+}
+
 #todo-form > input {
     font-size: 20px;
-    width: 400px;
-    margin-top: 10px;
+    width: 396.02px;
     border: none;
 }
 
 .todoContainer {
     background-color: rgba(0, 0, 0, 0.5);
     width: 400px;
-    height: 100px;
-    overflow: scroll;
+    height: 180px;
+    overflow: auto;
     color: white;
 }
 
@@ -112,7 +120,7 @@ body {
 #bottom {
     color: white;
     margin: 0 auto;
-    padding-top: 150px;
+    padding-top: 20px;
 }
 
 #quote {
