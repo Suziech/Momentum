@@ -112,5 +112,18 @@ body {
 #bottom {
     color: white;
     margin: 0 auto;
-    padding-top: 70px;
+    padding-top: 150px;
+}
+
+#quote {
+    font-size: 1.5rem;
+}
+
+#quote > span {
+    display: block;
+    text-align: center;
+}
+
+#quote > span:last-child {
+    font-style: italic;
 }
