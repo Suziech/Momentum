@@ -7,7 +7,8 @@ function onGeoOk(position) {
         const weather = document.querySelector("#weather span:first-child")
         const city = document.querySelector("#weather span:last-child")
         city.innerText = data.name
-        weather.innerText = `${data.weather[0].main} / ${data.main.temp}`
+        weather.innerHTML = data.weather[0].main === 'Clouds' ? `<i class="fa-solid fa-cloud"></i> <span>${Math.floor(data.main.temp)}°C</span>` : `<i class="fa-solid fa-cloud-showers-heavy"></i> <span>${Math.floor(data.main.temp)}°C</span>`
+        // weather.innerText = `${data.weather[0].main === 'Clouds' ? clouds : sun} ${Math.floor(data.main.temp)}°C`
     })
 }
 
