@@ -22,18 +22,18 @@
           required
           maxlength="15"
           type="text"
-          placeholder="What is your name?" />
+          placeholder="What is your name?"
+        />
         <button>Enter</button>
       </form>
       <h1 id="greeting" class="hidden"></h1>
-      <h2 class="todoListHeader">⭐Todo-List⭐</h2>
-      <form id="todo-form">
-        <input
-          type="text"
-          placeholder="📝 Write a To Do and Press Enter"
-          required />
-      </form>
-      <div class="todoContainer"><ul id="todo-list"></ul></div>
+      <div class="todoWrapper hidden">
+        <h2 class="todoListHeader">📝 Write a To Do and Press Enter</h2>
+        <form id="todo-form">
+          <input type="text" required />
+        </form>
+        <div class="todoContainer"><ul id="todo-list"></ul></div>
+      </div>
     </div>
     <div id="bottom">
       <div id="quote">
@@ -48,6 +48,9 @@
     <script src="./js/todo.js"></script>
     <script src="./js/weather.js"></script>
     <script src="./js/quotes.js"></script>
-    <script src="https://kit.fontawesome.com/7f61f553d7.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/7f61f553d7.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
